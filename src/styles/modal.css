@@ -1,0 +1,348 @@
+:root {
+    --primary-color: #111BD9;
+    --secondary-color: #044DDF;
+    --accent-color: #03FA6E;
+    --background-color: #F2F2F2;
+    --text-color: #0D0D0D;
+    --button-color: #53b4ff;
+    --button-hover-color: #004080;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.close-button {
+    position: absolute;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.357);
+    width: 25px;
+    height: 25px;
+    border-radius: 70%;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.option {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.social-login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+#password{
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 20%;
+    padding: 15px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: var(--secondary-color);
+}
+
+.terms {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-color);
+    margin-top: 15px;
+}
+
+.success-modal {
+    text-align: center;
+    padding: 30px;
+}
+
+.success-icon {
+    font-size: 48px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    background: rgba(3, 250, 110, 0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.success-modal h2 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.success-modal p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .options {
+        flex-wrap: wrap;
+    }
+
+    .option {
+        flex: 1 1 100%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .close-button {
+        font-size: 20px;
+    }
+
+    .success-icon {
+        font-size: 36px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .option{
+        display: none;
+    }
+}
+
+.login-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-perfil button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.login-perfil button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.783);
+}
+
+.login-perfil button i {
+    font-size: 24px;
+}
+
+
+#logoutButton{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#logoutButton:hover{
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 3px rgba(0, 0, 0, 0.371);
+}
+
+/* Estilo do botão quando conectado */
+.login-perfil button.connected {
+    background-color: var(--button-color); 
+    color: rgb(0, 0, 0);
+    cursor: de; 
+}
+
+.login-perfil button.connected:hover {
+    transform: none; 
+    box-shadow: none;
+}
+
+.login-perfil button.connected i {
+    color: var(--primary-color);
+}
+#ctb {
+    width: max-content;
+    margin: 0 auto;    
+    text-align: center;
+  }
+  
+#ctb .title {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.3;
+
+}
+
+#ctb .title span {
+    color: #ffffff;
+    animation: textHighlight 1.5s infinite alternate;
+}
+
+@keyframes textHighlight {
+    0% { color: #03FA6E; }
+    100% { color: #111BD9; }
+}
+
+
+#createAccountButton{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#createAccountButton:hover{
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 3px rgba(0, 0, 0, 0.371);
+}
+
+
+.options {
+    display: flex;
+  }
+  
+  .option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .option input[type="checkbox"] {
+    width: 18px;
+    height: 16px;
+    accent-color: #4caf50;
+    cursor: pointer;
+    background-color: #dfdfdf7c;
+  }
+  
+  .option span {
+    color: #000000;
+    transition: color 0.3s ease;
+  }
+  
+  .option:hover span {
+    color: #4caf50;
+  }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="src/images/NovoWeb ICON3.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovoWeb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/chatbot.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="nav_logo">
+          <i class="fa-solid fa-n"></i>
+          <i class="fa-solid fa-o"></i>
+          <i class="fa-solid fa-v"></i>
+          <i class="fa-solid fa-o"></i>
+          <br />
+          <i class="fa-solid fa-w"></i>
+          <i class="fa-solid fa-e"></i>
+          <i class="fa-solid fa-b"></i>
+        </div>
+        <img class="iconWeb" src="src/images/NovoWeb ICON3.ico" alt="novoweb" />
+        <!-- Navbar para Computadores -->
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#produtos">Modelos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#planos">Planos</a>
+          </li>
+        </ul>
+        <ul>       
+          
+          
+    <!-- Botão para abrir o modal -->
+    <div class="login-perfil">
+      <button id="loginButton" onclick="openModal()">
+        <i class="fa-solid fa-user"></i> Login
+      </button>
+    </div>
+    <div id="logout-container" style="display: none;">
+      <button id="logoutButton" class="logout-button">Sair</button>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">
+              <i class="fa-solid fa-xmark"></i>
+              </span>
+
+
+              <div id="ctb">
+                <h1 class="title">
+                  <span>Cadastrar-se</span>
+                </h1>
+              </div>
+            
+            <div class="options">
+                <div class="option">
+                    <input type="checkbox">
+                    <span>Plano Básico</span>
+                </div>
+                <div class="option">
+                    <input type="checkbox">
+                    <span>Plano Intermediario</span>
+                </div>
+                <div class="option">
+                    <input type="checkbox">
+                    <span>Plano Avançado</span>
+                </div>
+            </div>
+
+            <div class="social-login">
+                <div class="social-icons">
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                </div>
+                <div>Ou</div>
+                <p>Crie sua conta</p>
+            </div>
+
+            <form>
+              <div id="form-container">
+                <input id="name" type="text" placeholder="Seu Nome">
+                <input id="email" type="email" placeholder="Seu Email">
+                <input id="password" type="password" placeholder="Sua Senha">
+                <button id="createAccountButton">Criar conta</button>
+              </div>
+              
+              <p id="welcome-message" style="display: none;"></p>
+              <div id="login-info" style="display: none;">
+                <p id="welcome-message"></p>
+                <button id="logoutButton">Sair</button>
+              </div>
+            </form>
+
+            <div class="terms">
+                Ao criar uma conta, <br> você concorda com nossos termos de uso e política de privacidade
+            </div>
+        </div>
+    </div>
+    <div id="successModal" class="modal" style="display: none;">
+      <div class="modal-content success-modal">
+        <span class="close-button" onclick="closeSuccessModal()">&times;</span>
+        <div class="success-icon">✓</div>
+        <h2>Conta criada com sucesso!</h2>
+        <p>Bem-vindo! Sua conta foi criada com sucesso.</p>
+        <button class="submit-button" onclick="closeSuccessModal()">Continuar</button>
+      </div>
+    </div>
+
+
+      
+
+        <!--navbar para celulares-->
+  <button id="mobile_btn">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+    </header>
+
+    <main id="content">
+      <!-- Seção Home -->
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            sua empresa ainda não
+            <span>tem um site?</span>
+          </h1>
+          <p id="description">
+            "Seu próximo grande passo começa aqui."<br> 
+            Contrate-nos e coloque sua empresa online.
+          </p>
+
+          <!--<div id="cta_buttons">
+            <a href="#" class="btn-default"> ADICIONAR </a>
+            <a href="tel:+" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              CONTATO
+            </a>
+          </div>-->
+          <div class="social-media-buttons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div id="banner"></div>
+      </section>
+
+
+      <!--Sobre Nós-->
+      <div class="border">
+        <section class="about-section">
+          <div class="about-left"></div>
+          <div class="about-right">
+            <h2>Sobre Nós</h2>
+            
+            <p>
+              Na NovoWeb, nossa missão é transformar ideias em experiências
+              digitais únicas. Com uma equipe apaixonada por inovação e design,
+              trabalhamos lado a lado com nossos clientes para criar soluções de
+              sites personalizadas, focando em funcionalidade, beleza e
+              performance.
+            </p>
+            <p>
+              Seja um site simples ou um portal completo, nos dedicamos para que
+              cada detalhe reflita a essência do seu negócio e conquiste o seu
+              público!
+              <p>Bem-vindo ao futuro digital com a NovoWeb.</p> 
+            </p>
+            <div class="sobre-nos-container">
+              <div class="meio-circulo"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+           <!-- Agende seu horario -->
+            <div class="borde">
+           <div class="container">
+            <div class="text-content">
+              <h1>Agende um Horário</h1>
+              <p>
+                Para oferecer um atendimento personalizado, pedimos que nossos clientes agendem um horário. 
+                Assim, garantimos que sua experiência seja excepcional.
+              </p>
+              <a href="#">Agendar Agora</a>
+            </div>
+            <div class="image-content">
+              <img src="/src/images/Calendario.png" alt="Ilustração de agendamento">
+            </div>
+          </div>
+        </div>
+
+      <!-- Seção Produtos -->
+      <section id="produtos">
+        <h2>MODELOS<br />DE<br />SITES</h2>
+        <div class="produtos-container">
+          <div class="produto">
+            <img src="src/images/Modelo1.png" alt="Site 1" />
+            <h3>Site Personalizado 1</h3>
+            <div class="preco">R$ 2.000,00</div>
+            <a href="Food.html" target="_blank" class="btn-default">Ver Mais</a>
+          </div>
+          <div class="produto">
+            <img src="src/images/Colares/Lume Collares2.png" alt="Site 2" />
+            <h3>Site Personalizado 2</h3>
+            <div class="preco">R$ 3.000,00</div>
+            <a href="Colares.html" target="_blank" class="btn-default">Ver Mais</a>
+          </div>
+          <div class="produto">
+            <img src="src/images/modelo3.png" alt="Site 3" />
+            <h3>Site Personalizado 3</h3>
+            <div class="preco">R$ 4.500,00</div>
+            <a href="carros.html" target="_blank" class="btn-default">Ver Mais</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Planos -->
+      <section id="planos">
+        <h2>Nossos Planos</h2>
+        <div class="planos-container">
+          <div class="plano destaque">
+            <h3>Plano Básico</h3>
+            <p>
+              Ideal para pequenas empresas que estão começando no mundo digital.
+            </p>
+            <ul>
+              <li>Site personalizado</li>
+              <li>Design responsivo</li>
+              <li>Suporte básico</li>
+              <li>1 formulário de contato</li>
+              <li>Adição de imagens (limitado)</li>
+              <li>Botão de chamada para WhatsApp</li>
+            </ul>
+              <li>Garantia de 15 dias para ajustes</li>
+            </ul>
+            <p class="preco">R$ 399,00</p>
+            <a href="#" class="btn-default">Contratar</a>
+          </div>
+          <div class="plano destaque">
+            <h3>Plano Intermediário</h3>
+            <p>
+              Perfeito para empresas em crescimento que precisam de mais
+              funcionalidades.
+            </p>
+            <ul>
+              <li>Sistema de login</li>
+              <li>Tráfego do site</li>
+              <li>Chat online</li>
+              <li>Certificado SSL gratuito <br> (site seguro)</li>
+              <li>Backup semanal</li>
+              <li>Suporte prioritário</li>
+            </ul>
+            <li>Garantia de 30 dias para ajustes</li>
+            </ul>
+            <p class="preco">R$ 749,00</p>
+            <a href="#" class="btn-default">Contratar</a>
+          </div>
+          <div class="plano destaque ">
+            <h3>Plano Avançado</h3>
+            <p>
+              Para empresas que desejam um site completo e personalizado, com
+              todos os recursos avançados.
+            </p>
+            <ul>
+              <li>Páginas ilimitadas</li>
+              <li>Design exclusivo e responsivo</li>
+              <li>Google Analytics <br> Tráfego do site</li>
+              <li>Adição de imagens</li>
+              <li>Integração com e-commerce</li>
+              <li>Manutenção Semanal</li>
+              <li>Otimização SEO avançada <br> para todos os dispositivos</li>
+              <li>Reuniões Semanais</li>
+            </ul>
+            <li>Garantia semanais para ajustes</li>
+            </ul>
+            <p class="preco">R$ 1399,00</p>
+            <a href="#" class="btn-default">Contratar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+
+        <!-- Botão de Chatbot -->
+        <button id="chatbotButton">
+          <i class="fa-solid fa-robot"></i>
+        </button>
+        <!-- Janela do Chatbot -->
+        <div id="chatbotWindow">
+          <!-- Cabeçalho do Chatbot -->
+          <div>
+            ChatBot
+            <span id="closeChatbot">&times;</span>
+          </div>
+          <!-- Área de Mensagens -->
+          <div id="chatbotMessages">
+            <!-- Mensagens serão inseridas aqui -->
+          </div>
+          <!-- Campo de Entrada -->
+          <div>
+            <input
+              type="text"
+              id="chatbotInput"
+              placeholder="Digite sua mensagem..."
+            />
+            <button id="sendChatbot">Enviar</button>
+          </div>
+        </div>
+  
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>NovoWeb</h3>
+          <p>"Conectando você ao futuro digital"</p>
+          <ul class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </ul>
+        </div>
+        
+        
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 NovoWeb. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    
+    <script src="src/JavaScript/script.js"></script>
+  </body>
+</html>

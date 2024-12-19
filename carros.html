@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="src/images/NovoWeb ICON3.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovoWeb</title>
+    <link rel="stylesheet" href="src/styles/carros.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-nav">
+      <div class="navbar">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <h1>NovoWeb</h1>
+          </div>
+          <div class="menu-items">
+            <li><a href="carros.html"><i class="fa-solid fa-car"></i>Início</a></li>
+            <li><a href="#novidade">
+              <i class="fa-solid fa-star"></i>Novidades</a></li>
+            <li><a href="cars.html">
+              <i class="fa-solid fa-cart-shopping"></i>Catalagos</a></li>
+              
+            <div class="rede-logo">
+              <a href="#" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <header class="header">
+          <div id="mobile_nav">
+            <a href="carros.html#home" class="mobile-item active">
+              <i class="fas fa-home"></i>
+              <span>Início</span>
+            </a>
+            <a href="carros.html#novidade" class="mobile-item">
+              <i class="fa-solid fa-car"></i>
+              <span>Novidade</span>
+            </a>
+            <a href="cars.html" class="mobile-item">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span>Catálogo</span>
+            </a>
+          </div>
+
+          
+        <!-- Voltar ao Top -->
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Voltar ao Topo">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        </header>
+
+        <!-- Banner Hero -->
+        <section id="home" class="hero">
+          <div class="hero-text">
+            <div class="fundoimg">
+            <h1>Encontre o Carro Perfeito</h1>
+            <p>Luxo e performance em um só lugar</p>
+            <a href="cars.html" class="btn-hero">Explorar Catálogo</a>
+          </div>
+          </div>
+          </section>
+
+        <!-- Destaques -->
+<section id="highlights" class="highlights-section">
+  <div class="highlight-item">
+    <i class="fas fa-trophy highlight-icon"></i>
+    <h2>Carros Premiados</h2>
+    <p>Explore os veículos que conquistaram prêmios por design e inovação.</p>
+  </div>
+  <div class="highlight-item">
+    <i class="fas fa-tools highlight-icon"></i>
+    <h2>Suporte Completo</h2>
+    <p>Contamos com especialistas para ajudar em todas as etapas.</p>
+  </div>
+  <div class="highlight-item">
+    <i class="fas fa-road highlight-icon"></i>
+    <h2>Test Drive Exclusivo</h2>
+    <p>Agende seu test drive e experimente antes de decidir.</p>
+  </div>
+</section>
+
+
+
+        <div class="sobre-nos">
+          <div class="sobre-nos-container">
+            <div class="sobre-text">
+              <h2>Sobre Nós</h2>
+              <p>
+                Bem-vindo a NovoWeb, sua parceira confiável na revenda de carros na região. Nosso objetivo é conectar você ao veículo ideal, com transparência, facilidade e o melhor custo-benefício.
+              </p>
+              <p>
+                Oferecemos uma experiência personalizada para nossos clientes, garantindo praticidade e segurança em cada negociação. Com uma ampla variedade de veículos e uma equipe dedicada, estamos aqui para tornar o processo de compra ou venda de seu carro simples e sem complicações.
+              </p>
+
+                <button class="btn-defaulte">
+                  <i class="fa-sharp fa-solid fa-arrow-left"> 
+                  <a href="index.html#planos">Voltar ao NovoWeb</a>
+                </i>
+                </button>
+            </div>
+            <div class="sobre-imagem">
+              <img src="src/images/antek-6Efhq5GP87o-unsplash.jpg" alt="Carros em exposição" />
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+        <!-- Novidade -->
+        <div id="novidade">
+          <h1>NOVIDADE DA SEMANA</h1>
+        </div>
+
+        <!-- Seção de Carros -->
+        <div class="container">
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(2)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(3)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Depoimentos -->
+<section id="testimonials" class="testimonials-section">
+  <h2 class="section-title">O que nossos clientes dizem</h2>
+  <div class="testimonials-container">
+    <div class="testimonial">
+      <p>
+        "Comprei meu carro através da NovoWeb e foi uma experiência incrível! O atendimento foi rápido e eficiente. Super recomendo!"
+      </p>
+      <span>- Maria Silva</span>
+      <p> <span>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </span></p>
+    </div>
+    <div class="testimonial">
+      <p>
+        "A equipe me ajudou a encontrar exatamente o que eu procurava. Fiquei muito satisfeito com o meu novo carro!"
+      </p>
+      <span>- João Oliveira</span>
+      <p> <span>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </span></p>
+    </div>
+    <div class="testimonial">
+      <p>
+        "Além de um excelente catálogo de carros, adorei o suporte oferecido durante a compra. Muito obrigado, NovoWeb!"
+      </p>
+      <span>- Ana Costa</span>
+      <p> <span>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </span></p>
+    </div>
+  </div>
+</section>
+
+    <!-- Seção Sobre Nós -->
+    <div id="empresa">
+      <ul>
+        <h4>Empresa</h4>
+        <a href="#"><li>Sobre</li></a>
+        <a href="#"><li>Empregos</li></a>
+        <a href="#"><li>Blog</li></a>
+        <a href="#"><li>Como trabalhamos</li></a>
+      </ul>
+
+      <ul>
+        <h4>Contato</h4>
+        <a href="#"><li>Ajuda/FAQ</li></a>
+        <a href="#"><li>Imprensa</li></a>
+        <a href="#"><li>Avaliações</li></a>
+        <a href="#"><li>Anuncie conosco</li></a>
+        <a href="#"><li>Nossa localização</li></a>
+        
+      <div class="rede">
+        <a href="#" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+      </ul>
+    </div>
+    <script src="src/JavaScript/carros.js"></script>
+  </body>
+</html>

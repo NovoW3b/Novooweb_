@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="src/images/NovoWeb ICON3.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovoWeb</title>
+    <link rel="stylesheet" href="src/styles/carros.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header-nav">
+      <div class="navbar">
+        <div class="nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+            <h1>NovoWeb</h1>
+            
+          </div>
+          <div class="menu-items">
+            <li>
+              <a href="carros.html"><i class="fa-solid fa-car"></i>Início</a>
+            </li>
+            <li>
+              <a href="#novidade"> <i class="fa-solid fa-star"></i>Novidades</a>
+            </li>
+            <li>
+              <a href="cars.html">
+                <i class="fa-solid fa-cart-shopping"></i>Catalagos</a
+              >
+            </li>
+
+            <div class="rede-logo">
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <header class="header">
+          <div id="mobile_nav">
+            <a href="carros.html#home" class="mobile-item active">
+              <i class="fas fa-home"></i>
+              <span>Início</span>
+            </a>
+            <a href="carros.html#novidade" class="mobile-item">
+              <i class="fa-solid fa-car"></i>
+              <span>Novidade</span>
+            </a>
+            <a href="#cars.html" class="mobile-item">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span>Catálogo</span>
+            </a>
+          </div>
+        </header>
+
+        <section id="ho" class="maio">
+          <div class="hero-text">
+            <div class="caixacor-container">
+            <div class="caixacor bmw-blue"></div>
+            <div class="caixacor bmw-white"></div>
+            <div class="caixacor bmw-black"></div>
+            </div>
+            <h1>Modelos Disponiveis</h1>
+            <div class="caixacor-container">
+              <div class="caixacor bmw-blue"></div>
+              <div class="caixacor bmw-white"></div>
+              <div class="caixacor bmw-black"></div>
+            </div>
+          </div>
+        </section>
+
+        <!--Pesquisar-->
+        <form class="search-container">
+          <input type="text" id="search-bar" placeholder="Pesquisar..." />
+          <a href="#"
+            ><img
+              class="search-icon"
+              src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
+          /></a>
+        </form>
+
+        <!-- Modelos de pesquisa -->
+        <div class="filter-bar">
+          <div class="filter-item dropdown">
+            <button class="dropbtn">Car type ▾</button>
+            <div class="dropdown-content">
+              <a href="#">🚙 SUV</a>
+              <a href="#">🚗 Sedan</a>
+              <a href="#">🚘 Hatchback</a>
+            </div>
+          </div>
+          <div class="filter-item dropdown">
+            <button class="dropbtn">Capacity ▾</button>
+            <div class="dropdown-content">
+              <a href="#">👥 2 seats</a>
+              <a href="#">👥 4 seats</a>
+              <a href="#">👥 5 seats</a>
+            </div>
+          </div>
+          <div class="filter-item dropdown">
+            <button class="dropbtn">Transmission ▾</button>
+            <div class="dropdown-content">
+              <a href="#">🔧 Manual</a>
+              <a href="#">⚙️ Automatic</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voltar ao Top -->
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Voltar ao Topo">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- Seção de Carros -->
+        <div class="container">
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(2)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(3)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="listing">
+            <div class="car-image">
+              <img src="src/images/carro img/Palio.png" alt="Car Image" />
+            </div>
+            <div class="car-info">
+              <div class="car-details">
+                <input
+                  type="checkbox"
+                  id="heart-checkbox-1"
+                  class="heart-checkbox"
+                />
+                <label for="heart-checkbox-1" class="dish-heart">
+                  <h2>
+                    Chevrolet Onix <span class="badge">Great Deal</span>
+                    <i class="fa-solid fa-heart"></i>
+                  </h2>
+                </label>
+                <ul class="specs">
+                  <li>🚗 4 seats</li>
+                  <li>📦 2 bags</li>
+                  <li>🚹 Manual</li>
+                  <li>❄️ A/C</li>
+                </ul>
+                <ul class="additional-info">
+                  <li class="ano">2013</li>
+                  <li class="ano">111.111 km</li>
+                </ul>
+                <p class="location">
+                  Avenida Bias Fortes, 954, Lourdes,<br />
+                  Belo Horizonte
+                </p>
+              </div>
+              <div class="price">
+                <h3>$36.776</h3>
+                <a href="#" class="view-deal" onclick="openModal(1)"
+                  >Ver Mais</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div id="infoModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <h2>Mais Informações</h2>
+              <div id="modalInfoContent">
+                <!-- Conteúdo que será atualizado dinamicamente com JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <!-- Seção Sobre Nós -->
+      <div id="empresa">
+        <ul>
+          <h4>Empresa</h4>
+          <a href="#"><li>Sobre</li></a>
+          <a href="#"><li>Empregos</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Como trabalhamos</li></a>
+          <button class="btn-defaulte">
+            <i class="fa-sharp fa-solid fa-arrow-left"> 
+            <a href="index.html#planos">Voltar ao NovoWeb</a>
+          </i>
+          </button>
+        </ul>
+
+        <ul>
+          <h4>Contato</h4>
+          <a href="#"><li>Ajuda/FAQ</li></a>
+          <a href="#"><li>Imprensa</li></a>
+          <a href="#"><li>Avaliações</li></a>
+          <a href="#"><li>Anuncie conosco</li></a>
+          <a href="#"><li>Nossa localização</li></a>
+
+          <div class="rede">
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://wa.me/5511999999999" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </ul>
+      </div>
+
+      <script src="src/JavaScript/carros.js"></script>
+    </header>
+  </body>
+</html>

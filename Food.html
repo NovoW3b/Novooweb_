@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="src/images/NovoWeb ICON3.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/Food.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>NovoWeb</title>
+  </head>
+  <body>
+    <div class="border">
+      <div class="radions">
+        <header>
+          <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+
+            <ul id="nav_list">
+              <li class="nav-item active">
+                <a href="#home">Início</a>
+              </li>
+              <li class="nav-item">
+                <a href="#menu">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#testimonials">Avaliações</a>
+              </li>
+            </ul>
+
+            <button class="btn-defaulter">Peça aqui</button>
+
+            <button id="mobile_btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+
+          <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+              <li class="nav-item">
+                <a href="#home">Início</a>
+              </li>
+              <li class="nav-item">
+                <a href="#menu">Cardápio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#testimonials">Avaliações</a>
+              </li>
+            </ul>
+
+          </div>
+        </header>
+
+        <main id="content">
+          <section id="home">
+            <div class="shape">
+              <img src="src/images/toast-7009956_640.jpg" alt="banner">
+            </div>
+            <div id="cta">
+              <h1 class="title">
+                O sabor que vai até
+                <span>você</span>
+              </h1>
+
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet
+              </p>
+
+              <div id="cta_buttons">
+                <a href="index.html" class="btn-defaulter"> Voltar </a> 
+
+                <a href="tel:+55555555555" id="phone_button">
+                  <button class="btn-defaulter">
+                    <i class="fa-solid fa-phone"></i>
+                  </button>
+                  +45 19929-7934
+                </a>
+              </div>
+
+              <div class="social-media-buttons">
+                <a href="">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section id="menu">
+            <h2 class="section-titlel">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+              <div id="dishes">
+                <div class="dish">
+                  <!-- Checkbox invisível para controlar o coração -->
+                  <input
+                    type="checkbox"
+                    id="heart-checkbox-1"
+                    class="heart-checkbox"
+                  />
+                  <label for="heart-checkbox-1" class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+
+                  <img src="#" class="dish-image" alt="" />
+
+                  <h3 class="dish-title">Lorem Ipsum</h3>
+
+                  <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+
+                  <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(10+)</span>
+                  </div>
+
+                  <div class="dish-price">
+                    <button class="btn-default">
+                      <i class="fa-solid fa-basket-shopping"> R$20,00</i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="dish">
+                  <input
+                    type="checkbox"
+                    id="heart-checkbox-2"
+                    class="heart-checkbox"
+                  />
+                  <label for="heart-checkbox-2" class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+
+                  <img src="#" class="dish-image" alt="" />
+
+                  <h3 class="dish-title">Lorem Ipsum</h3>
+
+                  <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+
+                  <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(10+)</span>
+                  </div>
+
+                  <div class="dish-price">
+                    <button class="btn-default">
+                      <i class="fa-solid fa-basket-shopping"> R$20,00</i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="dish">
+                  <input
+                    type="checkbox"
+                    id="heart-checkbox-3"
+                    class="heart-checkbox"
+                  />
+                  <label for="heart-checkbox-3" class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+
+                  <img src="#" class="dish-image" alt="" />
+
+                  <h3 class="dish-title">Lorem Ipsum</h3>
+
+                  <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+
+                  <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(21+)</span>
+                  </div>
+
+                  <div class="dish-price">
+                    <button class="btn-default">
+                      <i class="fa-solid fa-basket-shopping"> R$20,00</i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="dish">
+                  <input
+                    type="checkbox"
+                    id="heart-checkbox-3"
+                    class="heart-checkbox"
+                  />
+                  <label for="heart-checkbox-9" class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+
+                  <img src="#" class="dish-image" alt="" />
+
+                  <h3 class="dish-title">Lorem Ipsum</h3>
+
+                  <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+
+                  <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(21+)</span>
+                  </div>
+
+                  <div class="dish-price">
+                    <button class="btn-default">
+                      <i class="fa-solid fa-basket-shopping"> R$20,00</i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="dish">
+                  <input
+                    type="checkbox"
+                    id="heart-checkbox-4"
+                    class="heart-checkbox"
+                  />
+                  <label for="heart-checkbox-4" class="dish-heart">
+                    <i class="fa-solid fa-heart"></i>
+                  </label>
+
+                  <img src="#" class="dish-image" alt="" />
+
+                  <h3 class="dish-title">Lorem Ipsum</h3>
+
+                  <span class="dish-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+
+                  <div class="dish-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(17+)</span>
+                  </div>
+
+                  <div class="dish-price">
+                    <button class="btn-default">
+                      <i class="fa-solid fa-basket-shopping"> R$20,00</i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-defaulte">Ver mais pratos</button>
+          </section>
+
+          <section class="support-section">
+            <div class="support-text">
+                <h4>UMA EQUIPE DEDICADA</h4>
+                <h2>faça a sua melhor refeição do dia</h2>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos temporibus saepe sint voluptates, modi exercitationem nesciunt animi doloremque eligendi earum ipsam non fugiat repellat. Dignissimos, ipsam veritatis? Eaque, voluptate.
+                </p>
+                <button class="contact-button">Fale com nossa equipe &rsaquo;</button>
+            </div>
+            <div class="chat-box">
+                <div class="message received">Bom dia!</div>
+                <div class="message received">Qual será o seu pedido?
+                </div>
+                <div class="time">08:29</div>
+                <div class="message-input">
+                    <input type="text" placeholder="Message">
+                    <button class="send-button">&#9654;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão de Chatbot -->
+    <button id="chatbotButton">
+      <i class="fa-solid fa-robot"></i>
+    </button>
+    <!-- Janela do Chatbot -->
+    <div id="chatbotWindow">
+      <!-- Cabeçalho do Chatbot -->
+      <div>
+        ChatBot
+        <span id="closeChatbot">&times;</span>
+      </div>
+      <!-- Área de Mensagens -->
+      <div id="chatbotMessages">
+        <!-- Mensagens serão inseridas aqui -->
+      </div>
+      <!-- Campo de Entrada -->
+      <div>
+        <input
+          type="text"
+          id="chatbotInput"
+          placeholder="Digite sua mensagem..."
+        />
+        <button id="sendChatbot">Enviar</button>
+      </div>
+    </div>
+          
+
+          <section id="testimonials">
+            <img src="src/images/chef.png" id="testimonial_chef" alt="" />
+
+            <div id="testimonials_content">
+              <h2 class="section-title">Depoimentos</h2>
+              <h3 class="section-subtitle">
+                O que os clientes falam sobre nós
+              </h3>
+
+              <div id="feedbacks">
+                <div class="feedback">
+                  <img src="#" class="feedback-avatar" alt="" />
+
+                  <div class="feedback-content">
+                    <p>
+                      <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <p>
+                      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Repellat voluptatibus cumque dolor ea est quae alias
+                      necessitatibus"
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="#" class="feedback-avatar" alt="" />
+  
+                    <div class="feedback-content">
+                      <p>
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          
+                        </span>
+                      </p>
+                      <p>
+                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellat voluptatibus cumque dolor ea est quae alias
+                        necessitatibus"
+                      </p>
+                    </div>
+                  </div>
+
+                <div class="feedback">
+                  <img src="#" class="feedback-avatar" alt="" />
+
+                  <div class="feedback-content">
+                    <p>
+                      <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                    </p>
+                    <p>
+                      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Repellat voluptatibus cumque dolor ea est quae alias
+                      necessitatibus"
+                    </p>
+                  </div>
+
+                  
+                </div>
+              </div>
+              <button class="btn-defaulter">Ver mais avaliações</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+        <!-- Seção Sobre Nós -->
+        <div class="canto">
+ <div id="empresa">
+
+    <ul> <h4>Empresa</h4>
+          <a href="#"><li>Sobre</li></a>
+          <a href="#"><li>Empregos</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Como trabalhamos</li></a>
+          <button class="btn-defaulte">
+            <i class="fa-sharp fa-solid fa-arrow-left"> 
+            <a href="index.html">Voltar ao NovoWeb</a>
+          </i>
+          </button>
+    </ul>
+
+
+          <ul> <h4>Contato</h4>
+                <a href="#"><li>Ajuda/FAQ</li></a>
+                <a href="#"><li>Imprensa</li></a>
+                <a href="#"><li>Avaliações</li></a>
+                <a href="#"><li>Anuncie conosco</li></a>
+                <a href="#"><li>Nossa localização</li></a>
+          </ul>
+
+
+    <div class="rede">
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    </div>
+      </div>
+    </div>
+    <script src="src/JavaScript/Pizza website.js"></script>
+    <script src="src/JavaScript/chatbot1.js"></script>
+  </body>
+</html>

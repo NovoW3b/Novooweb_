@@ -1,0 +1,150 @@
+/* Seção de Planos Dinâmica */
+#planos {
+      padding: 60px 8%;
+      background-color: #e6e6e6;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    
+    #planos::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background-color: #0349fa;
+      border-radius: 50%;
+      opacity: 0.2;
+      z-index: 0;
+    }
+    
+    #planos h2 {
+      font-size: 2.8rem;
+      margin-bottom: 70px;
+      color: #111BD9;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .planos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      margin-bottom: 70px;
+}
+    
+    .plano {
+      background: linear-gradient(145deg, #ffffff, #f1f3f5);
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      padding: 40px 30px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+    
+    .plano::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 100px;
+      height: 100px;
+      background-color: #0349fa;
+      border-radius: 50%;
+      opacity: 0.2;
+      transition: all 0.3s ease;
+    }
+    
+    .plano:hover::before {
+      width: 300px;
+      height: 300px;
+      top: -150px;
+      right: -150px;
+      opacity: 0.09;
+    }
+    
+    .plano.destaque:hover {
+      transform: translateY(-10px) scale(1.09);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      border: 3px solid #111BD9;
+      cursor: pointer;
+      transition: all 0.8s ease;
+    }
+    
+    .plano h3 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #03FA6E;
+    }
+
+    .plano p{
+      text-align: center;
+      font-weight: 800;
+      
+    }
+    
+    .plano ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .plano ul li {
+      font-size: 1.1rem;
+      padding: 12px 0;
+      border-bottom: 1px solid #ddd;
+      font-weight: 500;
+    }
+    
+    .plano .preco {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin: 25px 0;
+      color: #181818;
+    }
+    
+    .plano a.btn-default {
+      text-decoration: none;
+      color: white;
+      padding: 12px 25px;
+      background-color: #03FA6E;
+      border-radius: 12px;
+      font-weight: 700;
+      display: inline-block;
+      transition: all 0.4s ease;
+    }
+    
+    .plano a.btn-default:hover {
+      background-color: #111BD9;
+      transform: scale(1.1);
+    }
+    
+    /* Destaque do Plano Intermediário */
+    .plano.destaque {
+      border: 2px solid #03FA6E;
+      background-color: #f9fffb;
+    }
+    
+    .plano.destaque h3 {
+      color: #02d562;
+    }
+    
+    /* Responsividade para Dispositivos Móveis */
+    @media (max-width: 768px) {
+      .planos-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .plano {
+        width: 90%;
+      }
+    }
