@@ -259,7 +259,14 @@ input[type="email"] {
 .login-perfil button.connected {
     background-color: var(--button-color); 
     color: rgb(0, 0, 0);
-    cursor: de; 
+    cursor: default; 
+    padding: 10px 17px;
+}
+
+@media (max-width: 768px) {
+    .login-perfil button.connected {
+        padding: 15px;
+    }
 }
 
 .login-perfil button.connected:hover {
