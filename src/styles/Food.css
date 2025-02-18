@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('chatbot.css');
-
 
 :root {
     --color-primary-1: #fff9ea;
@@ -607,29 +605,35 @@ footer {
           flex-direction: column;
       }
   } 
-.footer{
-    background: #333;
+
+  .footer {
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid var(--color-primary-4);
 }
-.container {
-    width: 80%;
-    padding: 10px;
-    margin: auto;
-    overflow: hidden;
-    text-align: center;
-    background-color: var(--color-primary-2);
 
-  }
+.container {
+    width: 85%;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
 
 #empresa {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: var(--color-primary-1);
-    border-radius: 8px;
+    align-items: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
     margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
 }
 
 #empresa ul {
@@ -639,45 +643,48 @@ footer {
 }
 
 #empresa h4 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: var(--color-primary-6);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 #empresa a {
     color: var(--color-neutral-1);
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out, transform 0.2s;
 }
 
 #empresa a:hover {
     color: var(--color-primary-4);
+    transform: scale(1.1);
 }
 
 #empresa li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .rede {
     display: flex;
     align-items: center;
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 21px;
-    margin-right: 18px;
+    gap: 20px;
+    flex-direction: row;
+    margin-top: 15px;
 }
 
 .rede a {
     color: var(--color-primary-6);
-    font-size: 2em;
-    transition: color 0.3s;
-
+    font-size: 2.2em;
+    transition: color 0.3s, transform 0.3s ease-in-out;
 }
 
 .rede a:hover {
     color: var(--color-primary-4);
+    transform: rotate(10deg) scale(1.2);
 }
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     #empresa {
@@ -882,4 +889,103 @@ footer {
     .message {
         font-size: 0.8em;
     }
+}
+
+/* Botão do WhatsApp */
+#whatsappButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #03FA6E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+#whatsappButton img {
+    width: 30px;
+    height: 30px;
+}
+
+#whatsappButton:hover {
+    background-color: #00b14d;
+    transform: scale(1.1);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.dish {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.dish:hover {
+  transform: scale(1.05);
+}
+
+.dish img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dish-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.dish-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.dish-rate {
+  margin: 10px 0;
+  color: #f39c12;
+}
+
+.dish-price {
+  margin-top: 10px;
+}
+
+.btn-default {
+  background-color: #fbc02d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+  background-color: #ffa000;
 }
